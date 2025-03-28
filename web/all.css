@@ -39,7 +39,7 @@ table a {
             display: inline-block;
     text-decoration: none;
     color: #fff;
-    background-color: #3498db;
+    background-color: var(--Main-Color);
     padding: 0 8px;
     border-radius: 4px;
     font-weight: bold;
