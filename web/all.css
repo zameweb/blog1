@@ -27,7 +27,7 @@ ul.nav-tabs{display:grid;gap:var(--Main-Gap);grid-template-columns:1fr 1fr 1fr;f
         }
 
         tr:nth-child(even) {
-            background-color: #f4f4f4;
+            background-color: var(--Main-BG);
         }
 
         tr:hover {
