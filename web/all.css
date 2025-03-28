@@ -6,7 +6,6 @@ ul.nav-tabs{display:grid;gap:var(--Main-Gap);grid-template-columns:1fr 1fr 1fr;f
 
         table {
             width: 100%;
-            max-width: 800px;
             margin: 0 auto;
             border-collapse: collapse;
             background-color: #fff;
