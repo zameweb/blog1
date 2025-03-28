@@ -68,7 +68,6 @@ table a:hover {
 
             /* Stacking the content for smaller screens */
             td {
-                display: block;
                 padding: 10px;
             }
 
