@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://hesgoal-live-tv.pages.dev/sitemap.xml
