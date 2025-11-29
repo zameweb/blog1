@@ -3,411 +3,763 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Hesgoal Live - Free HD Sports Streaming | NFL, NBA, UFC, Soccer</title>
-    <meta name="description" content="Watch free live sports streaming in HD on Hesgoal. No registration required. Live NFL, NBA, UFC, MLB, NHL, Premier League, Champions League streams. Real-time scores and highlights.">
-    <meta name="keywords" content="hesgoal, hesgoal live, free sports streaming, nfl live, nba streams, ufc fights, soccer streaming, premier league, mlb, nhl, live sports">
-      <link rel="shortcut icon" href="web/favicon.png" type="image/x-icon">
-    <!-- Bing & Search Engine Verification -->
-    <meta name="msvalidate.01" content="BD81AE8859D8005E0BB2E3D613EB34B0">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://hesgoal-live.b-cdn.net/">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hesgoal-live.b-cdn.net/">
-    <meta property="og:title" content="Hesgoal Live - Free HD Sports Streaming | NFL, NBA, UFC, Soccer">
-    <meta property="og:description" content="Watch free live sports streaming in HD on Hesgoal. No registration required. Live NFL, NBA, UFC, MLB, NHL, Premier League streams.">
-    <meta property="og:image" content="https://hesgoal-live.b-cdn.net/web/favicon.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://hesgoal-live.b-cdn.net/">
-    <meta property="twitter:title" content="Hesgoal Live - Free HD Sports Streaming">
-    <meta property="twitter:description" content="Watch free live sports streaming in HD on Hesgoal. No registration required. Live NFL, NBA, UFC, MLB streams.">
-    <meta property="twitter:image" content="https://hesgoal-live.b-cdn.net/web/favicon.png">
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SportsOrganization",
-        "name": "Hesgoal Live",
-        "url": "https://hesgoal-live.b-cdn.net/",
-        "logo": "https://hesgoal-live.b-cdn.net/web/favicon.png",
-        "description": "Free live sports streaming platform offering HD quality streams for NFL, NBA, UFC, MLB, NHL, soccer and more.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "US"
-        },
-        "sameAs": [],
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://hesgoal-live.b-cdn.net/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Hesgoal Live",
-        "url": "https://hesgoal-live.b-cdn.net/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://hesgoal-live.b-cdn.net/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-    
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="preload" href="web/favicon.png" as="image">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Complete football match schedules, live scores, and latest news from Premier League, La Liga, Serie A, Bundesliga, and Champions League. Stay updated with real-time fixtures.">
+    <meta name="keywords" content="football schedule, soccer fixtures, live scores, match times, Premier League, La Liga, Champions League, Bundesliga, Serie A">
+    <meta name="author" content="FootballSchedule.com">
+    <title>Football Schedule - Live Match Times & Fixtures | FootballSchedule.com</title>
+    <link rel="canonical" href="https://footballschedule.com">
     <style>
-        /* Reset & Base Styles */
+        /* Reset dan Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
+        :root {
+            --primary-color: #1a3a5f;
+            --secondary-color: #4CAF50;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+            --white: #ffffff;
+            --gray: #666;
+            --light-gray: #f0f0f0;
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #0c2461 0%, #1e3799 100%);
-            min-height: 100vh;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
         }
         
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
         
-        /* Header Styles */
-        .header {
-            text-align: center;
-            padding: 40px 0;
-            color: white;
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         
-        .header img {
-            max-width: 280px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .header p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            opacity: 0.9;
-        }
-        
-        /* Main Content */
-        .main {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            overflow: hidden;
-            margin-bottom: 40px;
-        }
-        
-        .live-now {
-            background: #e74c3c;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            font-weight: bold;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-        
-        .sports-grid {
-            padding: 30px 20px;
-            background: #f8f9fa;
-        }
-        
-        .sports-grid h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #0c2461;
-            font-size: 1.8rem;
-        }
-        
-        .sports-categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            list-style: none;
-        }
-        
-        .sports-categories li a {
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: white;
-            padding: 18px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border-left: 5px solid #0c2461;
         }
         
-        .sports-categories li a:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-            background: #0c2461;
-            color: white;
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
         }
         
-        /* Content Sections */
-        .content-section {
-            padding: 40px 20px;
+        .logo span {
+            color: var(--secondary-color);
         }
         
-        .content-section h2 {
-            color: #0c2461;
-            font-size: 2.2rem;
-            margin-bottom: 30px;
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--white);
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 58, 95, 0.8), rgba(26, 58, 95, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%231a3a5f"/></svg>');
+            background-size: cover;
+            color: var(--white);
+            padding: 80px 0;
             text-align: center;
         }
         
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-        
-        .feature-card {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .feature-card h3 {
-            color: #0c2461;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        
-        /* FAQ Section */
-        .faq-section {
-            background: #f8f9fa;
-            padding: 50px 20px;
-        }
-        
-        .faq-item {
+        .hero h1 {
+            font-size: 2.8rem;
             margin-bottom: 20px;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            line-height: 1.2;
         }
         
-        .faq-item h3 {
-            color: #0c2461;
-            margin-bottom: 10px;
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #3d8b40;
+            transform: translateY(-3px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 40px 0;
+        }
+        
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        /* Jadwal Section - Format Sederhana */
+        .schedule-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 18px;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .schedule-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .match-time {
+            font-weight: bold;
+            color: var(--primary-color);
+            min-width: 80px;
+            font-size: 1.1rem;
+        }
+        
+        .match-teams {
+            flex-grow: 1;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .live-btn {
+            background-color: var(--accent-color);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            min-width: 80px;
+        }
+        
+        .live-btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .league-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        /* Ads */
+        .ad-container {
+            background-color: var(--light-gray);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .ad-placeholder {
+            background-color: #e0e0e0;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        
+        /* Artikel */
+        .article-preview {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .article-preview:last-child {
+            border-bottom: none;
+        }
+        
+        .article-preview h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--primary-color);
+            line-height: 1.3;
+        }
+        
+        .article-preview p {
+            color: var(--gray);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            color: var(--secondary-color);
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .read-more::after {
+            content: "→";
+            margin-left: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .read-more:hover::after {
+            transform: translateX(3px);
+        }
+        
+        /* Featured Leagues */
+        .leagues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .league-item {
+            background: var(--white);
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .league-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .league-logo {
+            width: 60px;
+            height: 60px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--primary-color);
         }
         
         /* Footer */
-        .footer {
-            text-align: center;
-            padding: 30px 0;
-            color: white;
-            background: rgba(0,0,0,0.2);
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 50px 0 20px;
         }
         
-        .breadcrumb {
-            padding: 15px 20px;
-            background: #eaf4ff;
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .footer-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
             font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: var(--gray);
         }
         
         .breadcrumb a {
-            color: #0c2461;
-            text-decoration: none;
+            color: var(--primary-color);
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
+            .header-content {
+                flex-direction: column;
+                text-align: center;
             }
             
-            .sports-categories {
-                grid-template-columns: 1fr;
+            nav ul {
+                margin-top: 15px;
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+                width: 100%;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 10px;
+            }
+            
+            .mobile-menu {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .schedule-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
+            
+            .match-time {
+                min-width: auto;
+            }
+            
+            .leagues-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .card {
+                padding: 20px 15px;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Football<span>Schedule</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#schedule">Match Schedule</a></li>
+                        <li><a href="#live">Live Scores</a></li>
+                        <li><a href="#leagues">Leagues</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
     <div class="container">
-        <header class="header" role="banner">
-            <img src="web/favicon.png" alt="Hesgoal Live - Free Sports Streaming" width="280" height="80">
-            <h1>Hesgoal Live - Free HD Sports Streaming</h1>
-            <p>Watch live sports in HD for free without registration. Instant access to NFL, NBA, UFC, MLB, NHL, soccer, and more with seamless streaming.</p>
-        </header>
-        
-        <main class="main" role="main">
-            <!-- Breadcrumb Navigation -->
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="https://hesgoal-live.b-cdn.net/">Home</a> 
-                <span> > Free Live Sports Streaming</span>
-            </nav>
-            
-            <!-- Live Now Indicator -->
-            <div class="live-now">
-                <i class="fas fa-broadcast-tower"></i> LIVE NOW: Multiple sports events streaming
+        <div class="breadcrumb">
+            <a href="#">Home</a> > <span>Football Match Schedule</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Complete Football Match Schedule & Live Scores</h1>
+            <p>Stay updated with real-time fixtures, results, and news from Premier League, La Liga, Serie A, Bundesliga, Champions League and more.</p>
+            <a href="#schedule" class="cta-button">View Today's Matches</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Jadwal Section -->
+            <section class="card" id="schedule">
+                <h2 class="section-title">Today's Football Match Schedule</h2>
+                
+                <h3 class="league-title">Premier League</h3>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="match-time">20:00 GMT</div>
+                        <div class="match-teams">Manchester United VS Liverpool</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="match-time">20:00 GMT</div>
+                        <div class="match-teams">Manchester City VS Chelsea</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="match-time">22:30 GMT</div>
+                        <div class="match-teams">Arsenal VS Tottenham</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                </div>
+                
+                <h3 class="league-title">La Liga</h3>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="match-time">21:00 GMT</div>
+                        <div class="match-teams">Barcelona VS Real Madrid</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="match-time">23:00 GMT</div>
+                        <div class="match-teams">Atletico Madrid VS Sevilla</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Iklan Adsense 1 -->
+            <div class="ad-container">
+                <div class="ad-placeholder">Advertisement - Football Schedule</div>
+            </div>
+
+            <!-- Post Jadwal -->
+            <section class="card">
+                <h2 class="section-title">Upcoming Matches This Week</h2>
+                
+                <h3 class="league-title">Champions League</h3>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="match-time">19:45 GMT</div>
+                        <div class="match-teams">Bayern Munich VS PSG</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="match-time">20:00 GMT</div>
+                        <div class="match-teams">Real Madrid VS Manchester City</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                </div>
+                
+                <h3 class="league-title">Serie A</h3>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="match-time">19:45 GMT</div>
+                        <div class="match-teams">Juventus VS AC Milan</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="match-time">21:45 GMT</div>
+                        <div class="match-teams">Inter Milan VS Napoli</div>
+                        <button class="live-btn">LIVE</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Iklan Adsense 2 -->
+            <div class="ad-container">
+                <div class="ad-placeholder">Advertisement - Football Fixtures</div>
+            </div>
+
+            <!-- Live Soccer -->
+            <section class="card" id="live">
+                <h2 class="section-title">Live Matches Now</h2>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="match-time">LIVE 67'</div>
+                        <div class="match-teams">AC Milan 2 - 1 Inter Milan</div>
+                        <button class="live-btn">WATCH</button>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="match-time">LIVE 34'</div>
+                        <div class="match-teams">Barcelona 1 - 0 Real Madrid</div>
+                        <button class="live-btn">WATCH</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Leagues -->
+            <section class="card" id="leagues">
+                <h2 class="section-title">Featured Football Leagues</h2>
+                <div class="leagues-grid">
+                    <div class="league-item">
+                        <div class="league-logo">PL</div>
+                        <div>Premier League</div>
+                    </div>
+                    <div class="league-item">
+                        <div class="league-logo">LL</div>
+                        <div>La Liga</div>
+                    </div>
+                    <div class="league-item">
+                        <div class="league-logo">SA</div>
+                        <div>Serie A</div>
+                    </div>
+                    <div class="league-item">
+                        <div class="league-logo">BL</div>
+                        <div>Bundesliga</div>
+                    </div>
+                    <div class="league-item">
+                        <div class="league-logo">UCL</div>
+                        <div>Champions League</div>
+                    </div>
+                    <div class="league-item">
+                        <div class="league-logo">UEL</div>
+                        <div>Europa League</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Artikel Singkat -->
+            <section class="card" id="news">
+                <h2 class="section-title">Latest Football News</h2>
+                
+                <div class="article-preview">
+                    <h3>Premier League Title Race Heats Up as Top Teams Face Off</h3>
+                    <p>With only 5 matches remaining in the season, the battle for the Premier League title intensifies as Manchester City, Liverpool, and Arsenal continue their pursuit of glory. This weekend's fixtures could be decisive.</p>
+                    <a href="#" class="read-more">Read Full Story</a>
+                </div>
+                
+                <div class="article-preview">
+                    <h3>Champions League Semifinals: Predictions and Key Players to Watch</h3>
+                    <p>As we approach the Champions League semifinals, we analyze the remaining teams, their strengths, weaknesses, and the players who could make the difference in these crucial matches.</p>
+                    <a href="#" class="read-more">Read Full Story</a>
+                </div>
+                
+                <div class="article-preview">
+                    <h3>Young Talents Shining in European Football This Season</h3>
+                    <p>From La Liga to the Premier League, several young players are making their mark this season. We look at the most promising talents and their potential impact on the future of football.</p>
+                    <a href="#" class="read-more">Read Full Story</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About FootballSchedule</h3>
+                    <p>Your premier destination for complete football match schedules, live scores, and the latest news from top leagues around the world.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">t</a>
+                        <a href="#" aria-label="Instagram">i</a>
+                        <a href="#" aria-label="YouTube">y</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Top Leagues</h3>
+                    <ul>
+                        <li><a href="#">Premier League</a></li>
+                        <li><a href="#">La Liga</a></li>
+                        <li><a href="#">Serie A</a></li>
+                        <li><a href="#">Bundesliga</a></li>
+                        <li><a href="#">Ligue 1</a></li>
+                        <li><a href="#">Champions League</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#schedule">Match Schedule</a></li>
+                        <li><a href="#live">Live Scores</a></li>
+                        <li><a href="#leagues">Leagues</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Subscribe</h3>
+                    <p>Get the latest match schedules and news delivered to your inbox.</p>
+                    <form style="margin-top: 10px;">
+                        <input type="email" placeholder="Your email" style="padding: 8px; width: 100%; margin-bottom: 10px; border-radius: 4px; border: none;">
+                        <button type="submit" style="background: var(--secondary-color); color: white; border: none; padding: 8px 15px; border-radius: 4px; width: 100%; cursor: pointer;">Subscribe</button>
+                    </form>
+                </div>
             </div>
             
-            <!-- Sports Categories -->
-            <section class="sports-grid">
-                <h2>Live Sports Categories</h2>
-                <ul class="sports-categories">
-                    <li>
-                        <a href="https://2025videos.blogspot.com/">
-                            <span><i class="fas fa-football-ball"></i> NFL Football Live</span>
-                            <span>Watch Now</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://2025videos.blogspot.com/">
-                            <span><i class="fas fa-basketball-ball"></i> NBA Basketball Live</span>
-                            <span>Watch Now</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://2025videos.blogspot.com/">
-                            <span><i class="fas fa-futbol"></i> Soccer Live Streams</span>
-                            <span>Watch Now</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://2025videos.blogspot.com/">
-                            <span><i class="fas fa-fist-raised"></i> UFC & MMA Fights</span>
-                            <span>Watch Now</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://2025videos.blogspot.com/">
-                            <span><i class="fas fa-baseball-ball"></i> MLB Baseball Live</span>
-                            <span>Watch Now</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://2025videos.blogspot.com/">
-                            <span><i class="fas fa-hockey-puck"></i> NHL Hockey Live</span>
-                            <span>Watch Now</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            
-            <!-- Main Content -->
-            <section class="content-section">
-                <h2>Free HD Sports Streaming with Hesgoal Live</h2>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>What is Hesgoal Live?</h3>
-                        <p>Hesgoal Live is the premier destination for free high-definition sports streaming. Access live NFL games, NBA matches, UFC fights, Premier League soccer, MLB baseball, NHL hockey, and more without any registration requirements.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>Why Choose Hesgoal?</h3>
-                        <p>Experience crystal-clear HD streaming with minimal buffering. Our platform offers comprehensive sports coverage, multi-device compatibility, and reliable 24/7 streaming services completely free of charge.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>How to Watch</h3>
-                        <p>Simply select your preferred sport from our navigation, choose the live event, and start watching instantly. No downloads, no sign-ups, no hidden fees - just pure sports action in high definition.</p>
-                    </div>
-                </div>
-                
-                <!-- Additional SEO Content -->
-                <article>
-                    <h3>Comprehensive Sports Coverage</h3>
-                    <p>Hesgoal Live provides extensive coverage of major sporting events worldwide. From American football to international soccer, we ensure you never miss a moment of the action.</p>
-                    
-                    <h4>Popular Leagues & Events</h4>
-                    <ul>
-                        <li><strong>NFL</strong> - Regular season, playoffs, and Super Bowl</li>
-                        <li><strong>NBA</strong> - Regular season and championship games</li>
-                        <li><strong>Premier League</strong> - All matches throughout the season</li>
-                        <li><strong>UFC</strong> - Pay-per-view events and fight nights</li>
-                        <li><strong>MLB</strong> - Regular season and World Series</li>
-                        <li><strong>NHL</strong> - Regular season and Stanley Cup playoffs</li>
-                    </ul>
-                </article>
-            </section>
-            
-            <!-- FAQ Section -->
-            <section class="faq-section">
-                <h2>Frequently Asked Questions</h2>
-                
-                <div class="faq-item">
-                    <h3>Is Hesgoal Live really free?</h3>
-                    <p>Yes, Hesgoal Live offers completely free sports streaming without any hidden charges or subscription fees.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Do I need to create an account?</h3>
-                    <p>No registration or account creation is required. You can start watching immediately.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>What sports are available?</h3>
-                    <p>We stream NFL, NBA, UFC, MLB, NHL, soccer, tennis, cricket, and many other sports.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can I watch on mobile devices?</h3>
-                    <p>Yes, Hesgoal Live is fully optimized for smartphones, tablets, and desktop computers.</p>
-                </div>
-            </section>
-        </main>
-        
-        <footer class="footer" role="contentinfo">
-            <p>&copy; 2024 Hesgoal Live - Free Sports Streaming. All rights reserved.</p>
-            <p>Watch live NFL, NBA, UFC, soccer, MLB, NHL streams in HD quality.</p>
-        </footer>
-    </div>
-    
-    <!-- Bing Site Analytics -->
+            <div class="copyright">
+                &copy; 2024 FootballSchedule.com - All Rights Reserved | Football match schedules, live scores, and news
+            </div>
+        </div>
+    </footer>
+
     <script>
-        (function() {
-            var bingSiteAuth = document.createElement('meta');
-            bingSiteAuth.name = 'msvalidate.01';
-            bingSiteAuth.content = 'BD81AE8859D8005E0BB2E3D613EB34B0';
-            document.getElementsByTagName('head')[0].appendChild(bingSiteAuth);
-        })();
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // Live button functionality
+        document.querySelectorAll('.live-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const matchTeams = this.closest('.schedule-item').querySelector('.match-teams').textContent;
+                alert(`Opening live stream for: ${matchTeams}`);
+            });
+        });
+        
+        // Update window width for responsive behavior
+        window.addEventListener('resize', function() {
+            const nav = document.querySelector('nav ul');
+            if (window.innerWidth > 768) {
+                nav.style.display = 'flex';
+            } else {
+                nav.style.display = 'none';
+            }
+        });
+        
+        // Initialize nav for mobile
+        if (window.innerWidth <= 768) {
+            document.querySelector('nav ul').style.display = 'none';
+        }
     </script>
 </body>
 </html>
